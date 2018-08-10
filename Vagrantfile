@@ -14,5 +14,6 @@ Vagrant.configure("2") do |config|
     app.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key']
     app.vm.network "private_network", ip: "10.20.20.20"
     app.vm.network "public_network"
+    app.vm.provision "shell", path: "prepare.sh"
   end
 end
