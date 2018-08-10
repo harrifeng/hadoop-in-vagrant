@@ -11,4 +11,4 @@ deb-src http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe 
 deb-src http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
 " | sudo tee /etc/apt/sources.list
 sudo apt-get update
-sudo apt-get install -y git tmux lrzsz
+sudo apt-get install -y git tmux lrzsz htop default-jdk
