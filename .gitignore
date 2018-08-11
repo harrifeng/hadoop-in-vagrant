@@ -50,4 +50,4 @@ build-iPhoneSimulator/
 .rvmrc
 
 .vagrant/
-hadoop-*.tar.gz
+*.tar.gz
