@@ -13,7 +13,7 @@ deb-src http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe
 
 echo "
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-export HADOOP_HOME=/user/local/hadoop
+export HADOOP_HOME=/usr/local/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin
 export PATH=$PATH:$HADOOP_HOME/sbin
 export HADOOP_MAPPED_HOME=$HADOOP_HOME
@@ -27,3 +27,5 @@ export JAVA_LIBRARY_PATH=$HADOOP_HOME/lib/native:$JAVA_LIBRARY_PATH
 
 sudo apt-get update
 sudo apt-get install -y git tmux lrzsz htop default-jdk
+sudo tar xzvf /vagrant/hadoop-2.6.4.tar.gz -C /user/local
+sudo mv /user/local/hadoop-2.6.4 /user/local/hadoop
