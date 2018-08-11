@@ -27,7 +27,10 @@ export JAVA_LIBRARY_PATH=$HADOOP_HOME/lib/native:$JAVA_LIBRARY_PATH
 
 sudo apt-get update
 sudo apt-get install -y git tmux lrzsz htop default-jdk python-pip
+sudo apt install build-essential checkinstall
+sudo apt-get build-dep emacs24
 sudo pip install -U pip
 sudo pip install -U ansible -i http://mirrors.aliyun.com/pypi/simple --trusted-host=mirrors.aliyun.com
 sudo tar xzvf /vagrant/hadoop-2.6.4.tar.gz -C /usr/local
 sudo mv /usr/local/hadoop-2.6.4 /usr/local/hadoop
+sudo chmod 600 ~/.ssh/id_rsa
